@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".08"/></pattern></defs>
+  <rect width="800" height="440" fill="#233d50"/>
+  <rect width="800" height="440" fill="url(#grid)"/>
+  <path d="M545-30C400 90 620 180 485 280S570 420 440 480" fill="none" stroke="#69d3d5" stroke-opacity=".25" stroke-width="50"/>
+  <path d="M545-30C400 90 620 180 485 280S570 420 440 480" fill="none" stroke="#69d3d5" stroke-width="2"/>
+  <path d="M412 135L470 215L405 320M625 140L555 265" fill="none" stroke="#e5bd59" stroke-width="3" stroke-dasharray="8 8"/>
+  <g fill="#233d50" stroke="#69d3d5" stroke-width="3"><rect x="392" y="119" width="40" height="28"/><path d="m392 119 40 28m0-28-40 28"/><rect x="385" y="306" width="40" height="28"/><path d="m385 306 40 28m0-28-40 28"/><circle cx="555" cy="265" r="13"/></g>
+  <path d="M0 0H800" stroke="#c84d53" stroke-width="10"/><path d="M0 10H800" stroke="#e5bd59" stroke-width="10"/><path d="M0 20H800" stroke="#419b77" stroke-width="10"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#edf6fa"><text x="48" y="98" font-size="15" letter-spacing="3">GHANA / JOINT RELIEF EXERCISE</text><text x="48" y="181" font-size="38" font-weight="700">OP SAAGUGA</text><text x="48" y="229" font-size="38" font-weight="700">GUGDA</text><text x="48" y="285" font-size="17" fill="#b5cbd6">Army. Navy. Air Force.</text><text x="48" y="373" font-size="13" letter-spacing="2" fill="#69d3d5">FICTIONAL TRAINING SCENARIO</text></g>
+</svg>

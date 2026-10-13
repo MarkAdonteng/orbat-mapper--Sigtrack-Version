@@ -64,9 +64,9 @@ const { history: shareHistory, clearHistory: clearShareHistory } = useShareHisto
 <template>
   <DropdownMenu>
     <DropdownMenuTrigger as="div" class="relative">
-      <button class="group flex items-center">
+      <button class="group flex items-center" aria-label="Tacticore Maptrix menu">
         <svg
-          class="block h-7 w-auto shrink-0 fill-[#aab074]/90 stroke-gray-900 dark:fill-gray-700 dark:stroke-gray-300"
+          class="block h-7 w-auto shrink-0 fill-[#087e8b]/15 stroke-[#087e8b] dark:fill-[#69d3d5]/15 dark:stroke-[#69d3d5]"
           stroke="currentColor"
           viewBox="41 41 118 118"
         >
@@ -75,7 +75,7 @@ const { history: shareHistory, clearHistory: clearShareHistory } = useShareHisto
           <circle cx="100" cy="70" r="10" class="fill-gray-900 dark:fill-gray-300" />
         </svg>
         <span class="ml-2 hidden font-medium tracking-tight lg:inline-flex"
-          >ORBAT-Mapper</span
+          >Tacticore Maptrix</span
         >
         <ChevronDownIcon
           class="text-muted-foreground group-hover:text-muted-foreground/80 ml-1 h-5 w-5"

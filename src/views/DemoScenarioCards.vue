@@ -6,6 +6,13 @@ import { MAP_EDIT_MODE_ROUTE } from "@/router/names";
 // paths leave the bundle with it. See `vite.singlefile.config.ts`.
 const DEMO_SCENARIOS = [
   {
+    name: "OP SAAGUGA GUGDA",
+    id: "op-saaguga-gugda",
+    summary:
+      "A fictional Ghana Armed Forces flood-relief exercise. Coordinate Army rescue teams, Navy boats, and Air Force support around the Volta River, then follow the six-hour timeline.",
+    imageUrl: "/scenarios/images/op-saaguga-gugda.svg",
+  },
+  {
     name: "The Falklands War 1982",
     id: "falkland82",
     summary:

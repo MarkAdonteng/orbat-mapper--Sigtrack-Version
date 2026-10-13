@@ -108,7 +108,7 @@ function addMetadata(
 ) {
   const metadata = document.createElementNS(SVG_NS, "metadata");
   metadata.textContent = JSON.stringify({
-    generator: "ORBAT Mapper",
+    generator: "Tacticore Maptrix",
     exportedAt: new Date().toISOString(),
     bounds: viewBox,
   });

@@ -214,10 +214,10 @@ async function handleExportOrbatMapper() {
       mimeTypes: ["application/json"],
       extensions: [".json"],
     });
-    sendNotification({ message: "ORBAT Mapper scenario ready for download" });
+    sendNotification({ message: "Tacticore Maptrix scenario ready for download" });
   } catch (error) {
     sendNotification({
-      message: "Failed to download ORBAT Mapper scenario",
+      message: "Failed to download Tacticore Maptrix scenario",
       type: "error",
     });
     console.error(error);
@@ -241,7 +241,7 @@ const splitButtonItems = computed<ButtonGroupItem[]>(() => [
     disabled: isEmpty.value,
   },
   {
-    label: "Export as ORBAT Mapper Scenario",
+    label: "Export as Tacticore Maptrix Scenario",
     onClick: handleExportOrbatMapper,
     disabled: isEmpty.value,
   },

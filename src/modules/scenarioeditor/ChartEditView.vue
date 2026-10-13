@@ -190,7 +190,7 @@ const menuItems = computed<MenuItemData<() => void>[]>(() => [
         :paper-size="options.paperSize"
         :default-file-name="exportFileName"
         :chart-title="`${activeUnit.name} ORBAT chart`"
-        :description="`Exported from ${state.info.name || 'ORBAT Mapper'}`"
+        :description="`Exported from ${state.info.name || 'Tacticore Maptrix'}`"
       />
     </main>
   </div>

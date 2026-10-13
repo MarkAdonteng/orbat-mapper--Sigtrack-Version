@@ -33,6 +33,8 @@ import AddMapServerDialog from "@/components/AddMapServerDialog.vue";
 import type { FeatureId } from "@/types/scenarioGeoModels";
 import type { TScenario } from "@/scenariostore";
 
+defineProps<{ basemapOnly?: boolean }>();
+
 export interface LayerInfo {
   id: string;
   name: string;
@@ -376,9 +378,11 @@ function updateOpacity(layerInfo: LayerInfo, opacity: number) {
 
     <AddMapServerDialog v-if="isMaplibreMode" v-model="showAddMapServer" />
 
-    <p class="mt-4 text-xs font-medium tracking-wider uppercase">Other layers</p>
+    <p v-if="!basemapOnly" class="mt-4 text-xs font-medium tracking-wider uppercase">
+      Other layers
+    </p>
 
-    <div class="bg-card mt-4 overflow-hidden rounded-md shadow-sm">
+    <div v-if="!basemapOnly" class="bg-card mt-4 overflow-hidden rounded-md shadow-sm">
       <ul class="divide-y">
         <li v-for="layer in otherLayers" :key="layer.id" class="px-6 py-4">
           <div class="flex items-center justify-between">
@@ -401,7 +405,7 @@ function updateOpacity(layerInfo: LayerInfo, opacity: number) {
       </ul>
     </div>
 
-    <div class="mt-4">
+    <div v-if="!basemapOnly" class="mt-4">
       <p>For debugging:</p>
       <pre class="text-sm">{{ mapView }}</pre>
     </div>

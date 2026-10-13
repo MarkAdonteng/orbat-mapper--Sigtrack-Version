@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { StyleValue } from "vue";
+import { ref, type StyleValue } from "vue";
 import { GlobalEvents } from "vue-global-events";
 import { MagnifyingGlassIcon } from "@heroicons/vue/24/solid";
 import { PanelLeftOpenIcon as ShowPanelIcon } from "@lucide/vue";
@@ -15,6 +15,9 @@ import KeyboardScenarioActions from "@/modules/scenarioeditor/KeyboardScenarioAc
 import ScenarioTimeline from "@/modules/scenarioeditor/ScenarioTimeline.vue";
 import UnitBreadcrumbs from "@/modules/scenarioeditor/UnitBreadcrumbs.vue";
 import { useUiStore } from "@/stores/uiStore";
+import LayersPanel from "@/components/LayersPanel.vue";
+import NewSimpleModal from "@/components/NewSimpleModal.vue";
+import { LayersIcon } from "@lucide/vue";
 
 withDefaults(
   defineProps<{
@@ -51,6 +54,7 @@ const emit = defineEmits<{
 }>();
 
 const ui = useUiStore();
+const showMapTiles = ref(false);
 </script>
 
 <template>
@@ -80,6 +84,17 @@ const ui = useUiStore();
             </div>
             <div :class="headerControlsClass" :style="headerControlsStyle">
               <slot name="header-right-before-search" />
+              <Button
+                type="button"
+                variant="secondary"
+                size="sm"
+                class="mr-1 h-7 gap-1 px-2"
+                data-test="map-tiles-button"
+                @click.stop="showMapTiles = true"
+              >
+                <LayersIcon class="size-4" aria-hidden="true" />
+                Map tiles
+              </Button>
               <IconButton
                 v-if="showSearchButton"
                 @click.stop="emit('showPlaceSearch')"
@@ -142,5 +157,11 @@ const ui = useUiStore();
     <UnitBreadcrumbs v-if="ui.showOrbatBreadcrumbs && !isMobile" />
     <ScenarioTimeline v-if="ui.showTimeline" />
     <slot name="modals" />
+    <NewSimpleModal v-model="showMapTiles" dialog-title="Map tiles">
+      <template #description>
+        Choose a base map below. Your selection updates the map immediately.
+      </template>
+      <LayersPanel v-if="showMapTiles" basemap-only />
+    </NewSimpleModal>
   </div>
 </template>

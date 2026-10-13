@@ -37,11 +37,11 @@ const capabilities = [
 </script>
 
 <template>
-  <div class="sigtrack-home">
+  <div class="maptrix-home">
     <header class="site-header page-width">
-      <a class="brand" href="#" aria-label="Sigtrack home">
+      <a class="brand" href="#" aria-label="Tacticore Maptrix home">
         <span class="brand-mark"><CrosshairIcon aria-hidden="true" /></span>
-        <span>SIGTRACK<span class="brand-caption">ORBAT MAPPER</span></span>
+        <span>TACTICORE<span class="brand-caption">MAPTRIX</span></span>
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#scenarios">Scenarios</a>
@@ -71,9 +71,11 @@ const capabilities = [
     <main>
       <section class="hero page-width" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> THE SIGTRACK EDITION</p>
+          <p class="eyebrow">
+            <span class="status-dot"></span> TACTICAL SCENARIO WORKSPACE
+          </p>
           <h1 id="hero-title">
-            Every unit.<br />Every move.<br /><span>The whole picture.</span>
+            Plan the force.<br />Map the mission.<br /><span>See every move.</span>
           </h1>
           <p class="hero-description">
             Build your order of battle. Map the terrain. Follow the action through time.
@@ -103,7 +105,7 @@ const capabilities = [
           <svg class="terrain" viewBox="0 0 600 490" fill="none" aria-hidden="true">
             <defs>
               <pattern
-                id="sigtrack-grid"
+                id="maptrix-grid"
                 width="50"
                 height="50"
                 patternUnits="userSpaceOnUse"
@@ -134,7 +136,7 @@ const capabilities = [
               stroke="#d0e2e5"
               stroke-width="16"
             />
-            <rect width="600" height="490" fill="url(#sigtrack-grid)" />
+            <rect width="600" height="490" fill="url(#maptrix-grid)" />
             <path
               d="M-20 370 175 250 288 279 441 166 630 113"
               stroke="#f9faf7"
@@ -210,10 +212,10 @@ const capabilities = [
         <div class="section-heading page-width">
           <div>
             <p class="eyebrow">YOUR WORKSPACE</p>
-            <h2 id="workspace-title">Choose your starting point.</h2>
+            <h2 id="workspace-title">Your next operation starts here.</h2>
           </div>
           <p>
-            Continue a scenario, import your work,<br />or explore a historical example.
+            Continue a scenario, import your work,<br />or explore a shared example.
           </p>
         </div>
         <LandingPageScenarios />
@@ -251,8 +253,7 @@ const capabilities = [
 
     <footer class="site-footer page-width">
       <div>
-        <strong>SIGTRACK</strong
-        ><span>Built on ORBAT Mapper. Made for the whole picture.</span>
+        <strong>Tacticore Maptrix</strong><span>Order of battle. Terrain. Time.</span>
       </div>
       <nav aria-label="Footer">
         <a href="https://docs.orbat-mapper.app/guide/about-orbat-mapper">About</a
@@ -266,21 +267,22 @@ const capabilities = [
 </template>
 
 <style scoped>
-.sigtrack-home {
-  --ink: #223e50;
-  --muted: #607581;
-  --accent: #315f7d;
-  --paper: #f7f9fa;
-  --line: #d9e2e6;
+.maptrix-home {
+  --ink: #233d50;
+  --muted: #526b7c;
+  --accent: #087e8b;
+  --paper: #eef4f7;
+  --line: #ccdce5;
   color: var(--ink);
-  background: var(--paper);
+  background:
+    radial-gradient(ellipse at 85% 15%, #087e8b0d, transparent 50%), var(--paper);
   min-height: 100%;
   font-family: "Inter Variable", "Segoe UI", sans-serif;
 }
-:global(.dark) .sigtrack-home {
+:global(.dark) .maptrix-home {
   --ink: #e0eaf0;
   --muted: #a1b5c1;
-  --accent: #a3c8e1;
+  --accent: #69d3d5;
   --paper: #172731;
   --line: #354751;
 }
@@ -311,18 +313,18 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 750;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
 }
 .brand-mark {
   display: grid;
   place-items: center;
   width: 42px;
   height: 42px;
-  background: var(--ink);
-  color: var(--paper);
-  border-radius: 10px;
+  background: var(--accent);
+  color: #ffffff;
+  border-radius: 12px;
 }
 .brand-mark svg {
   width: 28px;
@@ -331,7 +333,7 @@ button:focus-visible {
 .brand-caption {
   display: block;
   font:
-    9px/1.8 Consolas,
+    12px/1.8 Consolas,
     monospace;
   letter-spacing: 0.24em;
   color: var(--muted);
@@ -378,7 +380,7 @@ button:focus-visible {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 54px;
-  padding-block: 76px 66px;
+  padding-block: 88px 72px;
 }
 .eyebrow {
   display: flex;
@@ -431,10 +433,11 @@ h1 span {
   gap: 12px;
 }
 .primary-action {
-  background: var(--ink);
-  color: var(--paper);
-  padding: 15px 19px;
-  border-radius: 5px;
+  background: #087e8b;
+  color: #ffffff;
+  box-shadow: 0 5px 16px #087e8b22;
+  padding: 16px 22px;
+  border-radius: 8px;
   transition: transform 0.2s;
 }
 .primary-action:hover {
@@ -464,11 +467,12 @@ h1 span {
 }
 .tactical-map {
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 9px;
+  border-radius: 16px;
   background: #e7edeb;
-  box-shadow: 0 18px 50px #1737480c;
-  transform: rotate(-1deg);
+  box-shadow: 0 24px 60px #17374818;
+  transform: none;
+  border: 6px solid var(--paper);
+  outline: 1px solid var(--line);
 }
 .map-heading,
 .map-footer {
@@ -481,8 +485,8 @@ h1 span {
     8px/1.5 Consolas,
     monospace;
   letter-spacing: 0.08em;
-  color: #46616d;
-  background: #f0f4f2;
+  background: #233d50;
+  color: #edf6fa;
 }
 .map-heading span,
 .map-footer span {
@@ -515,6 +519,12 @@ h1 span {
   border-top: 1px solid var(--line);
   padding-block: 32px 48px;
   gap: 38px;
+}
+.capabilities article {
+  padding: 24px;
+  background: color-mix(in srgb, var(--paper), var(--ink) 3%);
+  border: 1px solid var(--line);
+  border-radius: 12px;
 }
 .capabilities article > svg {
   width: 21px;
@@ -577,7 +587,7 @@ h1 span {
   gap: 14px;
   padding: 22px 18px;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 12px;
   transition:
     border-color 0.2s,
     background 0.2s;

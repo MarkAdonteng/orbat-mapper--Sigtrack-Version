@@ -2,6 +2,11 @@
 
 These files are bundled with the repo for the landing-page demo scenario cards.
 
+## `op-saaguga-gugda.svg`
+
+- Source: Original vector illustration created for this repository.
+- Depicts the fictional Ghana joint flood-relief exercise; no external imagery used.
+
 ## `HMS_Broadsword_and_Hermes_1982_IWM.jpg`
 
 - Source: https://commons.wikimedia.org/wiki/File:HMS_Broadsword_and_Hermes%2C_1982_%28IWM%29.jpg

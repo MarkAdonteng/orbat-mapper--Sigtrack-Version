@@ -25,8 +25,8 @@ async function onSubmit() {
 <template>
   <NewSimpleModal v-model="open" dialog-title="Add map server">
     <template #description>
-      Type the address of a map server. ORBAT Mapper keeps it in this browser and offers
-      it as a base layer.
+      Type the address of a map server. Tacticore Maptrix keeps it in this browser and
+      offers it as a base layer.
     </template>
     <form class="space-y-4" @submit.prevent="onSubmit()">
       <Input

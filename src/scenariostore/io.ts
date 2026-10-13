@@ -677,6 +677,7 @@ export function useScenarioIO(store: ShallowRef<NewScenarioStore>) {
     const idUrlMap: Record<string, string> = {
       falkland82: "/scenarios/falkland82.json",
       narvik40: "/scenarios/narvik40.json",
+      "op-saaguga-gugda": "/scenarios/op-saaguga-gugda.json",
     };
     const url = idUrlMap[id];
     if (!url) {

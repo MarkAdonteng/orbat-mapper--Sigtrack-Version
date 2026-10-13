@@ -1,0 +1,533 @@
+{
+  "type": "ORBAT-mapper",
+  "version": "3.3.0",
+  "equipment": [],
+  "personnel": [],
+  "supplyCategories": [],
+  "id": "demo-op-saaguga-gugda",
+  "name": "OP SAAGUGA GUGDA",
+  "startTime": "2026-10-13T06:00:00Z",
+  "timeZone": "Africa/Accra",
+  "symbologyStandard": "app6d",
+  "meta": {
+    "createdDate": "2026-10-13T06:00:00Z",
+    "lastModifiedDate": "2026-10-13T06:00:00Z"
+  },
+  "description": "Fictional Ghana Armed Forces joint flood-relief training exercise in the lower Volta River area. Army rescue and engineer teams, Navy rescue boats, and Air Force relief support coordinate evacuation, supplies and medical assistance. All unit names, positions, movements and timings are invented for this example; this is not a record of an actual operation. Open the unit hierarchy, inspect the relief sites, and advance the timeline from 06:00 to 12:00 to follow the exercise.",
+  "sides": [
+    {
+      "id": "gh-exercise-side",
+      "name": "Ghana Armed Forces - exercise task force",
+      "standardIdentity": "3",
+      "initiallyOpen": true,
+      "groups": [
+        {
+          "id": "gh-group-army",
+          "name": "Army relief element",
+          "initiallyOpen": true,
+          "subUnits": [
+            {
+              "id": "gh-army-hq",
+              "name": "Army relief element HQ",
+              "shortName": "GH-ARMY-HQ",
+              "sidc": "10031000141211000000",
+              "location": [0.025, 6.145],
+              "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+              "subUnits": [
+                {
+                  "id": "gh-rescue-alpha",
+                  "name": "Army Rescue Team Alpha",
+                  "shortName": "GH-RESCUE-ALPHA",
+                  "sidc": "10031000141211000000",
+                  "location": [0.04, 6.11],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": [
+                    {
+                      "id": "gh-rescue-alpha-8",
+                      "t": "2026-10-13T08:00:00Z",
+                      "location": [0.075, 6.075],
+                      "title": "Deploy to the west-bank relief site",
+                      "status": "Moving",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-rescue-alpha-10",
+                      "t": "2026-10-13T10:00:00Z",
+                      "location": [0.085, 6.045],
+                      "title": "Support community evacuation",
+                      "status": "Assisting",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-rescue-alpha-12",
+                      "t": "2026-10-13T12:00:00Z",
+                      "location": [0.06, 6.06],
+                      "title": "Return to relief hub",
+                      "status": "Recovering",
+                      "interpolate": true
+                    }
+                  ]
+                },
+                {
+                  "id": "gh-rescue-bravo",
+                  "name": "Army Rescue Team Bravo",
+                  "shortName": "GH-RESCUE-BRAVO",
+                  "sidc": "10031000141211000000",
+                  "location": [0.09, 6.12],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": [
+                    {
+                      "id": "gh-rescue-bravo-8",
+                      "t": "2026-10-13T08:00:00Z",
+                      "location": [0.14, 6.1],
+                      "title": "Deploy to the east-bank relief site",
+                      "status": "Moving",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-rescue-bravo-10",
+                      "t": "2026-10-13T10:00:00Z",
+                      "location": [0.16, 6.06],
+                      "title": "Deliver relief supplies",
+                      "status": "Assisting",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-rescue-bravo-12",
+                      "t": "2026-10-13T12:00:00Z",
+                      "location": [0.12, 6.09],
+                      "title": "Complete relief handover",
+                      "status": "Recovering",
+                      "interpolate": true
+                    }
+                  ]
+                },
+                {
+                  "id": "gh-engineers",
+                  "name": "Army Engineer Support Team",
+                  "shortName": "GH-ENGINEERS",
+                  "sidc": "10031000141211000000",
+                  "location": [0.02, 6.14],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": [
+                    {
+                      "id": "gh-engineers-8",
+                      "t": "2026-10-13T08:00:00Z",
+                      "location": [0.06, 6.08],
+                      "title": "Assess access to relief hub",
+                      "status": "Moving",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-engineers-10",
+                      "t": "2026-10-13T10:00:00Z",
+                      "location": [0.06, 6.06],
+                      "title": "Restore temporary access",
+                      "status": "Assisting",
+                      "interpolate": true
+                    }
+                  ]
+                },
+                {
+                  "id": "gh-logistics",
+                  "name": "Army Logistics Convoy",
+                  "shortName": "GH-LOGISTICS",
+                  "sidc": "10031000141211000000",
+                  "location": [-0.01, 6.15],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": [
+                    {
+                      "id": "gh-logistics-8",
+                      "t": "2026-10-13T08:00:00Z",
+                      "location": [0.03, 6.1],
+                      "title": "Move supplies to forward hub",
+                      "status": "Moving",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-logistics-10",
+                      "t": "2026-10-13T10:00:00Z",
+                      "location": [0.06, 6.06],
+                      "title": "Deliver water and shelter kits",
+                      "status": "Assisting",
+                      "interpolate": true
+                    }
+                  ]
+                }
+              ],
+              "state": []
+            }
+          ]
+        },
+        {
+          "id": "gh-group-navy",
+          "name": "Navy river rescue element",
+          "initiallyOpen": true,
+          "subUnits": [
+            {
+              "id": "gh-navy-hq",
+              "name": "Navy river rescue element HQ",
+              "shortName": "GH-NAVY-HQ",
+              "sidc": "10031000141211000000",
+              "location": [0.034, 6.145],
+              "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+              "subUnits": [
+                {
+                  "id": "gh-boat-alpha",
+                  "name": "Navy Rescue Boat Alpha",
+                  "shortName": "GH-BOAT-ALPHA",
+                  "sidc": "10033000001211000000",
+                  "location": [0.1, 6.095],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": [
+                    {
+                      "id": "gh-boat-alpha-8",
+                      "t": "2026-10-13T08:00:00Z",
+                      "location": [0.13, 6.07],
+                      "title": "Begin river evacuation exercise",
+                      "status": "Moving",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-boat-alpha-10",
+                      "t": "2026-10-13T10:00:00Z",
+                      "location": [0.1, 6.04],
+                      "title": "Transfer evacuees to relief point",
+                      "status": "Assisting",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-boat-alpha-12",
+                      "t": "2026-10-13T12:00:00Z",
+                      "location": [0.1, 6.095],
+                      "title": "Return to staging area",
+                      "status": "Recovering",
+                      "interpolate": true
+                    }
+                  ]
+                },
+                {
+                  "id": "gh-boat-bravo",
+                  "name": "Navy Rescue Boat Bravo",
+                  "shortName": "GH-BOAT-BRAVO",
+                  "sidc": "10033000001211000000",
+                  "location": [0.105, 6.1],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": [
+                    {
+                      "id": "gh-boat-bravo-8",
+                      "t": "2026-10-13T08:00:00Z",
+                      "location": [0.16, 6.065],
+                      "title": "Support east-bank evacuation",
+                      "status": "Moving",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-boat-bravo-10",
+                      "t": "2026-10-13T10:00:00Z",
+                      "location": [0.12, 6.05],
+                      "title": "Deliver emergency supplies",
+                      "status": "Assisting",
+                      "interpolate": true
+                    }
+                  ]
+                }
+              ],
+              "state": []
+            }
+          ]
+        },
+        {
+          "id": "gh-group-air",
+          "name": "Air Force support element",
+          "initiallyOpen": true,
+          "subUnits": [
+            {
+              "id": "gh-air-hq",
+              "name": "Air Force support element HQ",
+              "shortName": "GH-AIR-HQ",
+              "sidc": "10031000141211000000",
+              "location": [0.043, 6.145],
+              "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+              "subUnits": [
+                {
+                  "id": "gh-airlift",
+                  "name": "Air Force Relief Flight",
+                  "shortName": "GH-AIRLIFT",
+                  "sidc": "10030100001101000000",
+                  "location": [-0.17, 5.61],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": [
+                    {
+                      "id": "gh-airlift-8",
+                      "t": "2026-10-13T08:00:00Z",
+                      "location": [0.07, 6.1],
+                      "title": "Arrive over exercise area",
+                      "status": "Moving",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-airlift-10",
+                      "t": "2026-10-13T10:00:00Z",
+                      "location": [0.06, 6.06],
+                      "title": "Complete relief delivery exercise",
+                      "status": "Assisting",
+                      "interpolate": true
+                    },
+                    {
+                      "id": "gh-airlift-12",
+                      "t": "2026-10-13T12:00:00Z",
+                      "location": [-0.17, 5.61],
+                      "title": "Return to staging point",
+                      "status": "Recovering",
+                      "interpolate": true
+                    }
+                  ]
+                },
+                {
+                  "id": "gh-air-coordination",
+                  "name": "Air Force Liaison Team",
+                  "shortName": "GH-AIR-COORDINATION",
+                  "sidc": "10031000141211000000",
+                  "location": [0.025, 6.135],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": []
+                }
+              ],
+              "state": []
+            }
+          ]
+        },
+        {
+          "id": "gh-group-joint",
+          "name": "Joint coordination and medical support",
+          "initiallyOpen": true,
+          "subUnits": [
+            {
+              "id": "gh-joint-hq",
+              "name": "Joint coordination and medical support HQ",
+              "shortName": "GH-JOINT-HQ",
+              "sidc": "10031000141211000000",
+              "location": [0.052, 6.145],
+              "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+              "subUnits": [
+                {
+                  "id": "gh-medical",
+                  "name": "Joint Medical Support Team",
+                  "shortName": "GH-MEDICAL",
+                  "sidc": "10031000141211000000",
+                  "location": [0.035, 6.13],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": [
+                    {
+                      "id": "gh-medical-8",
+                      "t": "2026-10-13T08:00:00Z",
+                      "location": [0.06, 6.06],
+                      "title": "Open field aid point",
+                      "status": "Assisting",
+                      "interpolate": true
+                    }
+                  ]
+                },
+                {
+                  "id": "gh-civil-liaison",
+                  "name": "Community Relief Liaison Team",
+                  "shortName": "GH-CIVIL-LIAISON",
+                  "sidc": "10031000141211000000",
+                  "location": [0.065, 6.055],
+                  "description": "Fictional exercise element; names, strengths and positions are illustrative.",
+                  "subUnits": [],
+                  "state": []
+                }
+              ],
+              "state": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "gh-event-6",
+      "startTime": "2026-10-13T06:00:00Z",
+      "title": "Exercise briefing",
+      "description": "Joint teams assemble, review the relief sites and confirm communication."
+    },
+    {
+      "id": "gh-event-7",
+      "startTime": "2026-10-13T07:00:00Z",
+      "title": "Relief hub activated",
+      "description": "Medical and logistics teams prepare the forward relief hub."
+    },
+    {
+      "id": "gh-event-8",
+      "startTime": "2026-10-13T08:00:00Z",
+      "title": "Teams deploy",
+      "description": "Army teams move to the relief sites, Navy boats begin evacuation practice and the Air Force relief flight arrives."
+    },
+    {
+      "id": "gh-event-10",
+      "startTime": "2026-10-13T10:00:00Z",
+      "title": "Relief delivery and evacuation",
+      "description": "Teams deliver supplies, assist communities and transfer simulated evacuees to medical support."
+    },
+    {
+      "id": "gh-event-12",
+      "startTime": "2026-10-13T12:00:00Z",
+      "title": "Handover and recovery",
+      "description": "Relief teams complete handover and begin recovery. Review the exercise timeline and unit movements."
+    }
+  ],
+  "layerStack": [
+    {
+      "id": "gh-relief-sites",
+      "kind": "overlay",
+      "name": "Exercise area and relief sites",
+      "items": [
+        {
+          "id": "gh-exercise-area",
+          "kind": "geometry",
+          "name": "Lower Volta relief exercise area",
+          "description": "Illustrative training area; not an official boundary.",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [-0.015, 6.015],
+                [0.2, 6.015],
+                [0.2, 6.17],
+                [-0.015, 6.17],
+                [-0.015, 6.015]
+              ]
+            ]
+          },
+          "geometryMeta": {
+            "geometryKind": "Polygon"
+          },
+          "style": {
+            "stroke": "#087e8b",
+            "stroke-width": 3,
+            "fill": "#087e8b",
+            "fill-opacity": 0.12,
+            "showLabel": true
+          }
+        },
+        {
+          "id": "gh-hub",
+          "kind": "geometry",
+          "name": "Forward relief and medical hub",
+          "description": "Simulated distribution, evacuation reception and medical aid site.",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [0.06, 6.06]
+          },
+          "geometryMeta": {
+            "geometryKind": "Point"
+          },
+          "style": {
+            "stroke": "#087e8b",
+            "stroke-width": 3,
+            "fill": "#087e8b",
+            "fill-opacity": 0.12,
+            "showLabel": true
+          }
+        },
+        {
+          "id": "gh-west-site",
+          "kind": "geometry",
+          "name": "West-bank relief site",
+          "description": "Exercise community assistance point.",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [0.085, 6.045]
+          },
+          "geometryMeta": {
+            "geometryKind": "Point"
+          },
+          "style": {
+            "stroke": "#c78a21",
+            "stroke-width": 3,
+            "fill": "#c78a21",
+            "fill-opacity": 0.12,
+            "showLabel": true
+          }
+        },
+        {
+          "id": "gh-east-site",
+          "kind": "geometry",
+          "name": "East-bank relief site",
+          "description": "Exercise community assistance point.",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [0.16, 6.06]
+          },
+          "geometryMeta": {
+            "geometryKind": "Point"
+          },
+          "style": {
+            "stroke": "#c78a21",
+            "stroke-width": 3,
+            "fill": "#c78a21",
+            "fill-opacity": 0.12,
+            "showLabel": true
+          }
+        },
+        {
+          "id": "gh-river-staging",
+          "kind": "geometry",
+          "name": "River rescue staging point",
+          "description": "Illustrative launch point for rescue boats.",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [0.1, 6.095]
+          },
+          "geometryMeta": {
+            "geometryKind": "Point"
+          },
+          "style": {
+            "stroke": "#336dbe",
+            "stroke-width": 3,
+            "fill": "#336dbe",
+            "fill-opacity": 0.12,
+            "showLabel": true
+          }
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "map": {
+      "baseMapId": "osm"
+    },
+    "boundingBox": [-0.23, 5.55, 0.25, 6.22],
+    "rangeRingGroups": [],
+    "statuses": [
+      {
+        "name": "Moving",
+        "description": "Exercise status"
+      },
+      {
+        "name": "Assisting",
+        "description": "Exercise status"
+      },
+      {
+        "name": "Recovering",
+        "description": "Exercise status"
+      }
+    ],
+    "supplyClasses": [],
+    "supplyUoMs": [],
+    "symbolFillColors": [],
+    "customSymbols": []
+  }
+}
